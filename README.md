@@ -6,25 +6,32 @@ Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailo
 
 ## AWS Services Used
 
-    1. **AWS S3 (Simple Service Storage)** -  
-    Amazon S3 (Simple Storage Service) is a       highly scalable and versatile object storage service offered by Amazon Web Services (AWS). 
-    2. **AWS Lambda **
+1. **AWS S3 (Simple Service Storage)**    :
+    Amazon S3 (Simple Storage Service) is a       highly scalable and versatile object storage service offered by Amazon Web Services (AWS).
+2. **AWS Lambda**    :
     AWS Lambda is a serverless compute service provided by Amazon Web Services (AWS) that enables developers to run code without provisioning 
     or managing servers. It allows you to execute code in response to events and automatically scales the infrastructure based on the workload. 
     AWS Lambda code can be triggered to the response to events like changes in S3, CloudWatch or other AWS services
-    3. **AWS Cloud Watch** : Amazon CloudWatch, provided by Amazon Web Services (AWS), is a robust monitoring and observability service. It 
+3. **AWS Cloud Watch**    :
+    Amazon CloudWatch, provided by Amazon Web Services (AWS), is a robust monitoring and observability service. It 
     empowers users to gather and monitor diverse metrics, oversee log files, establish alarms, and automatically take actions in response 
     to modifications in AWS resources.
-    4. **AWS Glue**
+5. **AWS Glue**     :
     AWS Glue is a fully managed extract, transform, and load (ETL) service provided by Amazon Web Services (AWS). It simplifies the process 
     of preparing and loading data for analytics, allowing developers and data engineers to build scalable and efficient data pipelines. AWS Glue
     Data Catalg is a metadata repository that makes it easy to discover and manage data in AWS.
-    5. **AWS Athena**
+6. **AWS Athena**    :
     Amazon Athena is an interactive query service provided by Amazon Web Services (AWS) that allows users to analyze data directly in Amazon Simple
     Storage Service (S3) using standard SQL queries. Athena is serverless, meaning there is no infrastructure to manage, and it scales automatically
     to handle large datasets.
 
-  
+
+## Languages Used
+
+Python and pandas
+SQL - Structured Query Langugae
+
+
 ## Architecture
 
 
