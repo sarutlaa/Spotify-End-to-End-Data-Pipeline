@@ -44,15 +44,18 @@ Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailo
 
 
 Step 1: In this project the data from Spotify   API is feteched and stored in S3 through the lambda function code.
-    Two buckets namely, raw_data and transformed data are created accordingly.
+       Two buckets namely, raw_data and transformed data are created accordingly.
+    
 Step 2: Upon loading the data into the S3, the transformation lambda function is triggered and the .json file is 
-    converted into the tables to do 2 tasks:
-        - Creating the transformed data ( artists, albums, songs) into the transformed S3 bucket using pandas in lambda 
-        functions. 
-        - Once the transformation is done, the older files are moved to the processed bucket inside the transformation
-        bucket.
+       converted into the tables to do 2 tasks:
+            - Creating the transformed data ( artists, albums, songs) into the transformed S3 bucket using pandas in lambda 
+            functions. 
+            - Once the transformation is done, the older files are moved to the processed bucket inside the transformation
+            bucket.
+            
 Step 3: Once the transformed data is available in S3 bucket, AWS Glue crawlers are created to crawl the repective 
-    S3 buckets and fetch the data into the specified database.
+       S3 buckets and fetch the data into the specified database.
+       
 Step 4:  The tables from AWS DataCatalog are accessed through the Athena to get the meaning insights of the different 
     tables built. Please refer to the .sql files attached for the insights found on songs, album and artists data. 
 
