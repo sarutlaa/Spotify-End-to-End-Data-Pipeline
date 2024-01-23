@@ -26,10 +26,11 @@ Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailo
     to handle large datasets.
 
 
-## Languages Used
+## Languages/Packages Used
 
-Python and pandas
-SQL - Structured Query Langugae
+1. Python Pandas
+2. SQL - Structured Query Langugae
+2. SpotifyAPI - spotipy 
 
 
 ## Architecture
@@ -55,6 +56,12 @@ SQL - Structured Query Langugae
     Step 4:  The tables from AWS DataCatalog are accessed through the Athena to get the meaning insights of the different 
     tables built. Please refer to the .sql files attached for the insights found on songs, album and artists data. 
 
+In a nutshell, Its execution flow is :
+
+Extract Data from Spotify API ----> Triggering Lambda Functions( Every 1 day) ----> Run the extract code ---->
+Store the raw data in S3 bucket ----> Trigger tranform function whenever new data is in S3 raw data bucket ---->
+Transform data and Load it in AWS Data Catalog tables ----> Finding the insights about the Top 100 songs using Athena. 
+
 ## Data Source: 
 
 
@@ -66,3 +73,4 @@ Spotify API developers account : https://developer.spotify.com/ , For access to 
 2. I faced an issue while loading the data from the AWS Glue crawler into Athena, the issue was the data feteched was not in proper format, I figured out that, the SerDe in AWS Glue by defalut is of the format "org.apache.hadoop.mapred.TextInputFormat", But instead to resolve the comma separated issue, you can use "org.apache.hadoop.hive.serde2.OpenCSVSerde" parameter.
 3. Second issue was the AWS Glue was not reading the proper column names for the artist table created through crawler. One has to edit the column names manually from the Edit JSON option.
 4. Even though the transformation code in the Lambda Function is written to get the datetime format for date related columns. AWS Glue crawler has considered it as a STRING type. Convert this STRING type to date format using date_parse in Athena for Date time related SQL Analysis.
+5. This Project can further be enhanced by importing the Athena results/tables in to the Visualization Tools like Tableau or Amazon Quicksight. 
