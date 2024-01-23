@@ -36,7 +36,7 @@ Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailo
 ## Architecture
 
 
-    [![Architecture](https://github.com/sarutlaa/Spotify-End-to-End-Data-Pipeline/assets/141533429/8b85c3c4-c633-4858-a9c1-daf14a81d1b9)](https://github.com/sarutlaa/Spotify-End-to-End-Data-Pipeline/blob/main/Architecture.png)
+[![Architecture](https://github.com/sarutlaa/Spotify-End-to-End-Data-Pipeline/assets/141533429/8b85c3c4-c633-4858-a9c1-daf14a81d1b9)](https://github.com/sarutlaa/Spotify-End-to-End-Data-Pipeline/blob/main/Architecture.png)
 
 
 ## Project WorkFlow
