@@ -30,7 +30,7 @@ Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailo
 
 1. Python Pandas
 2. SQL - Structured Query Langugae
-2. SpotifyAPI - spotipy 
+2. SpotifyAPI - spotipy python package.
 
 
 ## Architecture
