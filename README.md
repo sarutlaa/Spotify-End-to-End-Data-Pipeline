@@ -1,7 +1,7 @@
 
 # Spotify's-End-to-End-Data-Pipeline
 
-Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailored for extracting, transforming, and loading (ETL) Spotify's data to gain profound insights into the dynamics of the Top 100 Global playlists. The data pipeline commences by retrieving information from the Spotify API, then processing the data to make it suitable for analysis. The refined data is subsequently loaded into Amazon S3, and Amazon Athena is employed to query the processed data. AWS Glue plays a pivotal role in cataloging and managing metadata throughout the process.
+Leveraging AWS Services for Enhanced Music Streaming Insights specifically tailored for extracting, transforming, and loading (ETL) Spotify's data to gain profound insights into the dynamics of the Music artists, albums and tracks of Top 100 Global playlists. The data pipeline commences by retrieving information from the Spotify API, then processing the data to make it suitable for analysis. The refined data is subsequently loaded into Amazon S3, and Amazon Athena is employed to query the processed data. AWS Glue plays a pivotal role in cataloging and managing metadata throughout the process.
 
 
 ## AWS Serverless Services Used
